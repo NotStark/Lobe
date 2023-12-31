@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  color: #fff;
+  font-weight: 700;
+  background-color: #04DDB2;
+  padding: 1vw 1.7vw;
+  border-radius: 999rem;
+  font-size: 1vw;
+  transition: 0.3s ease-in-out;
+}
+.button:hover {
+  scale: 1.1;
+}
+
+header {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+header .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 12vh;
+  padding-inline: 4rem;
+  position: fixed;
+  background-color: #ffffff;
+  z-index: 99;
+}
+header .navbar #nav-middle {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+header .navbar #nav-middle a {
+  color: #000;
+  opacity: 0.5;
+  font-weight: 600;
+}
+header .navbar #nav-middle a.active {
+  opacity: 1;
+}
+header .container {
+  width: -moz-fit-content;
+  width: fit-content;
+  min-height: inherit;
+  position: absolute;
+  text-align: center;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+header .container h1 {
+  font-size: 4vw;
+  color: #333333;
+}
+header .container h1 span {
+  color: #04DDB2;
+}
+header .container h2 {
+  color: #333333;
+  font-size: 1.5vw;
+  font-weight: 400;
+  width: 70%;
+}
+header .container .video-container {
+  margin-top: 5rem;
+  transition: 0.3s ease-in-out all;
+  background: url(./Video.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 30px;
+  width: 120%;
+  height: 500px;
+  scale: 1.05;
+}
+header .container .video-container:hover {
+  scale: 1.06;
+}
+
+section {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+section h2 {
+  color: #333333;
+  font-size: 3.5vw;
+  width: 30%;
+  text-align: center;
+  line-height: 1.2;
+  margin-top: 10rem;
+}
+section a {
+  margin-top: 3rem;
+  padding: 0.8vw 2.5vw;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 15rem;
+  height: 60vh;
+  width: 100%;
+}
+footer .footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 6rem;
+  border-top: 1px solid rgba(51, 51, 51, 0.5333333333);
+  padding-top: 1rem;
+}
+footer .footer-container div {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  text-align: left;
+  color: #333333;
+  gap: 1rem;
+}
+footer .footer-container div svg {
+  text-align: left;
+  width: 40%;
+  height: 40%;
+  margin-bottom: 1rem;
+}
+footer .footer-container div h2 {
+  font-size: 0.95vw;
+  color: rgba(0, 0, 0, 0.7803921569);
+}
+footer .footer-container div h3 {
+  font-size: 0.9vw;
+  opacity: 0.8;
+  font-weight: 400;
+}
+footer .footer-container div a {
+  background-color: transparent !important;
+  color: rgba(51, 51, 51, 0.6235294118) !important;
+  padding: 0 !important;
+  font-size: 0.9vw !important;
+  font-weight: 500 !important;
+  cursor: pointer;
+}
+footer .footer-container div:nth-child(5) {
+  flex-direction: row;
+}
+footer .footer-container div:nth-child(5) a {
+  color: #fff !important;
+  font-size: 1.5vw !important;
+  background-color: #04DDB2 !important;
+}
+footer .footer-container div:nth-child(5) a i {
+  border-radius: 50% !important;
+}/*# sourceMappingURL=style.css.map */
